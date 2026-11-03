@@ -1,119 +1,124 @@
-<div align="center">
+<!-- The panel is a real 2-32-32-3 MLP trained from scratch in NumPy on a spiral; the shading is
+     what it predicts at each point. Regenerate every SVG here with `python make_assets.py`. -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c7a7b&height=190&section=header&text=Lewis%20Fan&fontSize=62&fontColor=ffffff&fontAlignY=36&desc=CS%20%40%20Georgia%20Tech%20%C2%B7%20Machine%20Learning%20%C2%B7%20Full-Stack&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="Lewis Fan: CS at Georgia Tech, machine learning, full-stack" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img alt="Shijia Fan: CS at Georgia Tech, Speech AI research intern at JD.com, CTO at LearnToGive, 2 published ML papers" src="assets/header-light.svg" width="806">
+</picture>
 
-<a href="https://www.linkedin.com/in/sjfan910/"><img src="https://img.shields.io/badge/LinkedIn-sjfan910-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://shijiafan.com"><img src="https://img.shields.io/badge/Website-shijiafan.com-2c7a7b?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
-<a href="https://www.semanticscholar.org/author/Shijia-Fan/2331773723"><img src="https://img.shields.io/badge/Papers-Semantic_Scholar-1857B6?style=for-the-badge&logo=semanticscholar&logoColor=white" alt="Semantic Scholar" /></a>
-<a href="mailto:sjf@shijiafan.com"><img src="https://img.shields.io/badge/Email-sjf%40shijiafan.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+I build ML systems and the products around them: biosignal and speech models,
+full-stack web apps, and simulations that run in the browser. CS at Georgia
+Tech (May 2029).
 
-<br/><br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tools-dark.svg">
+  <img alt="PyTorch, TensorFlow, NumPy, Pandas, scikit-learn, Python, TypeScript, Java, C++, C, Rust, SQL, React, Node.js, Tailwind, Three.js, Flask, FastAPI, Git, Linux, Raspberry Pi, Vercel, LaTeX" src="assets/tools-light.svg" width="806">
+</picture>
 
-<img src="https://img.shields.io/badge/Multimodal_classifier-97.5%25_accuracy-2c7a7b?style=flat-square" alt="Multimodal classifier: 97.5% accuracy" />
-<img src="https://img.shields.io/badge/Published_papers-2-6f42c1?style=flat-square" alt="2 published papers" />
-<img src="https://img.shields.io/badge/QuantiHack_'26-Finalist-f59e0b?style=flat-square" alt="QuantiHack 2026 finalist" />
-<img src="https://img.shields.io/badge/JD.com-ML_intern-e1251b?style=flat-square" alt="JD.com ML intern" />
+## &#9654;&nbsp; [LearnToGive, in production](https://learntogive.net)
 
-</div>
+<img src="assets/learntogive.png" width="100%" alt="LearnToGive's live impact stats: money raised, tutoring sessions, students supported and proceeds donated" />
 
----
+<sub>The live site's impact panel. These numbers aren't typed into the page: they're fetched from a published Google Sheet, cached for 5 minutes, and fall back through stale cache to defaults if the fetch fails.</sub>
 
-### 👨‍💻 About
+As CTO I built and shipped the whole platform: lesson booking, tutor sign-up,
+donations, live impact tracking and a proxied Gemini assistant that answers
+visitors' questions. React, TypeScript and Tailwind. **$3,908** raised and
+**83** students supported so far, across 5 countries. [Source](https://github.com/sjfan910/ltg-website)
 
-CS student at **Georgia Tech** (B.S., May 2029, Intelligence & Cybersecurity threads). I build ML systems end to end, from biosignal and speech models to the full-stack products around them. I publish as **Shijia Fan**.
+## &#9654;&nbsp; [A digital twin of Lake Erie, in your browser](https://superkush06.github.io/aquatic-twin/)
 
----
+<img src="assets/aquatic-twin.gif" width="100%" alt="a 3D model of Lake Erie where an algal bloom spreads from river phosphorus over 15 simulated days, then the depth layers separate" />
 
-### 💼 Experience
+<sub>Recorded from the running solver. 15 simulated days of algae (0 to 60 µg/L) growing from Maumee River phosphorus on NOAA's real lakebed, depth exaggerated 600x, then the 12 depth layers pulled apart.</sub>
 
-| Role | Where | When | What I did |
+Transport equations for heat, phosphorus, algae, oxygen and toxin on a
+**128 × 48 × 12** grid, solved live in the tab, while an operator tests cleanup
+plans on copies of the solver. Built by a team of three at a 2026 Georgia Tech
+hackathon. **My part:** the pipeline that turns NOAA's 22.6 MB bathymetry grid
+into the solver's lakebed, and the cost model, sourced from the International
+Joint Commission's study of the 2014 Toledo bloom. [Source](https://github.com/sjfan910/grokathon2026)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/rule-dark.svg">
+  <img alt="" src="assets/rule-light.svg" width="100%">
+</picture>
+
+## Projects
+
+**[Multimodal emotion recognition](https://bcpublication.org/index.php/SJOHSS/article/view/9024)** &nbsp;·&nbsp; published, 2025\
+A classifier that fuses facial, EEG and EOG signals, reaching **97.5%
+accuracy** and beating the FDMER and MISA baselines, paired with a
+Transformer-XL music generator at **1.71 perplexity**. Tested in a UK hospice.
+
+**[Mood Creature](https://github.com/sjfan910/CNN-Sentiment-Analysis)** &nbsp;·&nbsp; a CNN on a Raspberry Pi\
+A CNN trained from scratch in TensorFlow on FER2013 to **85.67% accuracy**,
+then deployed to a Raspberry Pi with a camera and an OLED screen that reacts
+to your face in real time.
+
+**[3D neural network visualiser](https://github.com/sjfan910/react-MLP-visualisation)** &nbsp;·&nbsp; a forward pass you can orbit\
+Draw on a 28 × 28 grid and every activation of a 784-64-32-10 MLP updates live
+in WebGL, with the strongest weights drawn as edges.
+
+<img src="assets/mlp-visualiser.png" width="100%" alt="a hand-drawn 3 lighting up the input layer of a 784-64-32-10 network, with activations flowing through two hidden layers to the output" />
+
+<sub>A hand-drawn 3 passing through the network. The weights are Xavier-initialised to show how activations flow, not trained to classify. My trained from-scratch MLP, with NumPy backprop, reaches 92.87% on Fashion-MNIST.</sub>
+
+**[QuantiHack '26 trading agent](https://github.com/sjfan910/marketmind-quantihack)** &nbsp;·&nbsp; finalist\
+Finalist at the UK's largest quant hackathon, sponsored by Jane Street,
+Optiver and Anthropic. An autonomous market maker that quotes both sides,
+skews to shed inventory and widens spreads in volatile regimes, built to run
+**7 days** unattended, with a FastAPI dashboard.
+
+**EDA cognitive load prediction** &nbsp;·&nbsp; Cambridge Centre for International Research, 2025\
+Predicts cognitive load from electrodermal activity on PhysioNet's n-back
+data, comparing Random Forest, Gradient Boosting, MLP and SVM.
+
+**[Boggle engine](https://github.com/sjfan910/mygamefailed6767)** &nbsp;·&nbsp; search over a 172K-word Trie\
+DFS with Trie prefix pruning finds every word on the board, and a beam search
+scored by word frequency powers the hint button.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/rule-dark.svg">
+  <img alt="" src="assets/rule-light.svg" width="100%">
+</picture>
+
+## Experience
+
+| Role | Where | When | Result |
 | :-- | :-- | :-- | :-- |
-| **Speech AI Research Intern** | JD.com Explore Academy, Beijing | Jun to Jul 2025 | Benchmarked 5+ speech NLP models (BERT, LSTM, Bag-of-Words); **+5.53%** emotional-cue extraction via attention-mask optimisation |
-| **CTO** | [LearnToGive](https://learntogive.net) | Apr 2025 to now | Built and shipped the platform: TypeScript, Tailwind, Gemini API assistant, bookings, donations, live impact tracking. **~£4,000** raised for 90+ students |
-| **Independent Researcher** | Multimodal biosignal ML | Nov 2024 to Sep 2025 | Facial + EEG + EOG emotion classifier, **97.5%** accuracy, beating FDMER and MISA baselines; Transformer-XL music generator at **1.71** perplexity |
-| **Independent Researcher** | Cognitive load prediction | May to Sep 2025 | EDA pipeline on PhysioNet data comparing Random Forest, Gradient Boosting, MLP and SVM |
+| Speech AI Research Intern | JD.com Explore Academy, Beijing | Jun to Jul 2025 | Benchmarked 5+ speech NLP models (BERT, LSTM, Bag-of-Words); **+5.53%** emotional-cue extraction from attention-mask optimisation |
+| CTO | LearnToGive | Apr 2025 to now | Shipped the full platform above |
+| Independent Researcher | Biosignal ML | Nov 2024 to Sep 2025 | 2 published papers |
+
+## The numbers, and what they're measured against
+
+| Model | Measured on | Result |
+| :-- | :-- | :-- |
+| Multimodal emotion classifier | Facial + EEG + EOG, against FDMER and MISA | **97.5%** accuracy |
+| Transformer-XL music generator | Therapeutic music generation, from the paper | **1.71** perplexity |
+| Mood Creature CNN | FER2013 | **85.67%** accuracy |
+| MLP from scratch (NumPy backprop) | Fashion-MNIST | **92.87%** accuracy |
+| Attention-mask optimisation (JD.com) | Elderly-care speech datasets | **+5.53%** emotional-cue extraction |
+
+Reach me at **sjf@shijiafan.com** · [LinkedIn](https://www.linkedin.com/in/sjfan910/) · [Papers](https://www.semanticscholar.org/author/Shijia-Fan/2331773723)
 
 ---
 
-### 🛠️ Projects
+<details>
+<summary>The panel at the top isn't a drawing</summary>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<br>
 
-#### 🤝 [LearnToGive platform](https://github.com/sjfan910/ltg-website)
-Production nonprofit site with booking, tutor sign-up, donations, live stats from Google Sheets with cached fallbacks, and a server-proxied Gemini assistant.<br/>
-<img src="https://img.shields.io/badge/-React-20232a?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/-Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" /> <img src="https://img.shields.io/badge/-Gemini_API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini API" />
+`make_assets.py` trains a 2-32-32-3 MLP from scratch in NumPy on a three-arm
+spiral: ReLU layers, softmax cross-entropy and a hand-written backward pass
+with no autograd. The shaded cells are the class it predicts at each point of
+the plane, and the dots are the training data.
 
-</td>
-<td width="50%" valign="top">
+```python
+d3 = p.copy(); d3[np.arange(n), y] -= 1; d3 /= n
+d2 = (d3 @ w3.T) * (h2 > 0)
+d1 = (d2 @ w2.T) * (h1 > 0)
+```
 
-#### 😀 [Mood Creature: real-time CNN on a Pi](https://github.com/sjfan910/CNN-Sentiment-Analysis)
-Custom CNN trained on FER2013 to **85.67%** accuracy, deployed on a Raspberry Pi with a camera and an OLED pixel-art display.<br/>
-<img src="https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow" /> <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" /> <img src="https://img.shields.io/badge/-Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white" alt="Raspberry Pi" />
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### 🌊 [Aquatic Twin](https://github.com/sjfan910/grokathon2026) <sup>`new`</sup>
-Browser-based 3D Lake Erie simulator that solves transport equations and ranks cleanup plans. I built the NOAA bathymetry pipeline into the solver grid and the cost model, sourced from the IJC's 2014 bloom study.<br/>
-<img src="https://img.shields.io/badge/Grokathon-2026-000000?style=flat-square" alt="Grokathon 2026" /> <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" /> <img src="https://img.shields.io/badge/-Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
-
-</td>
-<td width="50%" valign="top">
-
-#### 📈 [QuantiHack '26: trading agent](https://github.com/sjfan910/marketmind-quantihack)
-Finalist at the UK's largest quant hackathon, sponsored by Jane Street, Optiver and Anthropic. The repo holds an autonomous market-making agent with inventory skew, volatility regimes and a FastAPI dashboard.<br/>
-<img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### 🧠 [3D neural network visualiser](https://github.com/sjfan910/react-MLP-visualisation)
-Interactive 784-64-32-10 MLP: draw a digit and watch activations and weights update live in WebGL.<br/>
-<img src="https://img.shields.io/badge/-React-20232a?style=flat-square&logo=react&logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/-Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
-
-</td>
-<td width="50%" valign="top">
-
-#### 🔤 [Boggle engine](https://github.com/sjfan910/mygamefailed6767)
-DFS with Trie prefix pruning over a 172K-word dictionary, plus a beam-search hint engine scored by word frequency.<br/>
-<img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/-PyQt5-41CD52?style=flat-square&logo=qt&logoColor=white" alt="PyQt5" />
-
-</td>
-</tr>
-</table>
-
----
-
-### 📄 Publications
-
-- **Multimodal Sentiment Analysis and Improved Transformer-Based Emotional Music Generation Method for Elderly People in Nursing Homes**, *Scientific Journal of Humanities and Social Sciences* (2025). [Paper](https://bcpublication.org/index.php/SJOHSS/article/view/9024)
-- **EDA-Based Cognitive Load Prediction During Music-Modulated Memory Tasks**, Cambridge Centre for International Research (2025)
-
----
-
-### 🧰 Tech stack
-
-<div align="center">
-
-**Languages**<br/>
-<img src="https://skillicons.dev/icons?i=py,java,cpp,c,rust,ts,js,html,css&perline=9" alt="Python, Java, C++, C, Rust, TypeScript, JavaScript, HTML, CSS" />
-
-**Machine learning**<br/>
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn&perline=9" alt="PyTorch, TensorFlow, scikit-learn" /><br/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" /> <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" /> <img src="https://img.shields.io/badge/CNN_%C2%B7_RNN_%C2%B7_SVM_%C2%B7_Transformer--XL-2c7a7b?style=flat-square" alt="CNN, RNN, SVM, Transformer-XL" />
-
-**Web and backend**<br/>
-<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,tailwind,threejs,flask,fastapi&perline=9" alt="React, Next.js, Node.js, Tailwind, Three.js, Flask, FastAPI" />
-
-**Tools**<br/>
-<img src="https://skillicons.dev/icons?i=git,linux,raspberrypi,vercel,nginx,latex&perline=9" alt="Git, Linux, Raspberry Pi, Vercel, Nginx, LaTeX" />
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c7a7b,50:203a43,100:0f2027&height=100&section=footer" width="100%" alt="" />
+</details>
