@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c7a7b&height=190&section=header&text=Lewis%20Fan&fontSize=62&fontColor=ffffff&fontAlignY=36&desc=CS%20%40%20Georgia%20Tech%20%C2%B7%20Machine%20Learning%20%C2%B7%20Full-Stack&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="Lewis Fan: CS at Georgia Tech, machine learning, full-stack" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c7a7b&height=190&section=header&text=Shijia%20Fan&fontSize=62&fontColor=ffffff&fontAlignY=36&desc=CS%20%40%20Georgia%20Tech%20%C2%B7%20Machine%20Learning%20%C2%B7%20Full-Stack&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="Shijia Fan: CS at Georgia Tech, machine learning, full-stack" />
 
 <a href="https://www.linkedin.com/in/sjfan910/"><img src="https://img.shields.io/badge/LinkedIn-sjfan910-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="https://shijiafan.com"><img src="https://img.shields.io/badge/Website-shijiafan.com-2c7a7b?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
